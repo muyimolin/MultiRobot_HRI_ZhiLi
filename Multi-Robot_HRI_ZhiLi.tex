@@ -1,0 +1,112 @@
+
+\documentclass[11pt, peerreviewca, letterpaper, onecolumn]{article}
+%pdflatex for_computer_science
+\linespread{1.1}
+\usepackage{tgpagella}
+%\usepackage{tgschola}
+%\usepackage{palatino}
+%\usepackage{helvet}
+%\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{url}
+\usepackage{hyperref}
+
+\usepackage[dvips]{color}
+
+
+%  \usepackage{enumitem}
+%  \setlist{itemsep=0.1em, parsep=0.1em}
+
+%  \usepackage{palatino}
+\usepackage{pslatex}
+\usepackage{nopageno}
+\usepackage{enumitem}
+
+%\setlength{\parindent}{0em}
+%\setlength{\parskip}{0em}
+%\renewcommand{\labelitemi}{$\circ$}
+
+
+\usepackage[left=1in,right=1in,top=0.75in,bottom=0.75in]{geometry}
+
+\newcommand{\hr}{\vspace{0.2cm}\hrule\vspace{0.2cm}}
+\newcommand{\sect}[1]{\vspace{0.4cm}\textbf{#1}\hr}
+
+
+\usepackage{tabularx}
+%\usepackage{hangcaption}
+\usepackage[font=footnotesize]{caption}
+\usepackage[final]{graphicx}
+%\DeclareGraphicsExtensions{.eps,.ps,.PS,.EPS}
+\usepackage{epsfig}
+\usepackage{subfig}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{fancyhdr}
+\usepackage{tikz}
+%\usepackage{xspace}
+\usepackage{cite}
+\usepackage{url}
+\usepackage[letterpaper]{}
+\usepackage{epstopdf}
+\usepackage{authblk}
+\usepackage{lineno}
+
+\newcommand{\fig}[1]{Fig.~\ref{#1}}
+\newcommand{\figs}[2]{Fig.~\ref{#1} to~\ref{#2}\xspace}
+\newcommand{\figa}[2]{Fig.~\ref{#1} and~\ref{#2}\xspace}
+\newcommand{\eq}[1]{Eq.~(\ref{#1})}
+\newcommand{\eqs}[2]{Equations~(\ref{#1}) to~(\ref{#2})}
+\newcommand{\eqa}[2]{Equations~(\ref{#1}) and~(\ref{#2})}
+
+%\usepackage{eso-pic}
+%\AddToShipoutPicture{%
+%  \AtPageUpperLeft{%
+%    \hspace*{20pt}\makebox(200,-20)[lt]{%
+%      \footnotesize%
+%      \textbf{Li, Z - Research Statement}%
+%}}}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+%\rhead{Li, Z }
+%\rfoot{\thepage}
+% New style for URLs:
+% \makeatletter
+%\def\url@mystyle{%
+%\@ifundefined{selectfont}{\def\UrlFont{\sf}}{\def\UrlFont{\sffamily}}}
+%\makeatother
+%\urlstyle{my}
+
+\title{Heterogeneous Multi-agent Medical Robotic Systems}
+
+\author{Zhi Li \thanks{ Zhi Li (\protect\url{zli11@wpi.edu}) is with the Department of Mechanical Engineering, Robotics Program, Worcester Polytechnic Institute, Worcester, MA, 01609.}%
+
+}
+
+
+
+%\author[2]{Jie Fu\thanks{
+%Jie Fu is with Department of Electrical and Computer Engineering, Robotics Program, Worcester Polytechnic Institute Worcester, MA, 01609; jfu2@wpi.edu}}
+%
+%\affil[1]{Department of Computer Science, \LaTeX\ University}
+%\affil[2]{Department of Mechanical Engineering, \LaTeX\ University}
+
+\begin{document}
+
+\maketitle
+\noindent
+An heterogeneous multi-agent medical robotic system integrates medical robots of various motor skills and sensing capabilities to collaborate with medical personnel in situ and at remote locations. Such system may consist of: 
+
+\begin{itemize}
+
+\item \textbf{Surgical robots} and other specialist medical robots --- The specialized robots possess highly manipulation motor skills, high sensing capability, and very limited mobility. Such robots are deployed in small numbers to perform very specialized light-duty tasks of high dexterity and accuracy, in workspace of limited range. The specialized robots are preferred to be closely supervised and/or directly teleoperated by expert medical personnel, although (semi-)autonomous control can be provided to augment their motor skills and assist their diagnosis and operation decision-making. 
+
+\item \textbf{Nursing robots} and other generalist medical robots --- The generalist robots possess medium-level manipulation motor skills, sensing capability and high mobility. Such robots are deployed in large numbers to (semi-)autonomously perform a wide variety of light- to medium-duty tasks of manipulating a wide range of objects’ physical parameters. For instance, nursing robots can be supervised by medical personnel accordingly to the level of motor skills required by the tasks, and selectively teleoperated by in shared autonomy. In this scenario, medical personnel are assisting the (semi-)autonomous nursing robots via motor skill augmentation and intelligence assistance, instead of vice versa. Medical personnel are expected to manage a team of nursing robots at distributed locations to optimize the service efficiency and availability. In addition patient caring tasks, the nursing robots are responsible to assist and maintain specialized medical robots (e.g. changing surgical tools, providing medical instruments and supplies, etc.). They also provide transportation, supplies and maintenance to sensing robot clusters (e.g., charging energy, replacing faulty units, etc.). 
+
+\item \textbf{Swarm robots} and other sensing cluster robots --- The sensing cluster robots possess very basic manipulation motor skills and sensing capability, but limited mobility. Such robots are deployed in large number of clusters to perform coordinated tasks in well-structured environment. They are occasionally supervised by medical personnel, managed at high-level and in clusters. Each cluster of swarm robots execute their assigned tasks autonomously and report to medical personnel. The sensing cluster robots are regularly maintained by nursing robots, with minimal and necessary intervention from medical personnel, to resolve dispute between clusters and to recover from cluster-level failure. 
+
+\end{itemize}
+
+
+\end{document}
